@@ -5,7 +5,8 @@ logging.basicConfig(level=logging.INFO)
 
 
 def index(request):
-    return web.Response(body=b'<h1>index</h1>', content_type='text/html', charset='UTF-8')
+    return web.Response(body=b'<h1>index</h1>',
+                        content_type='text/html', charset='UTF-8')
 
 
 async def init(loop):
